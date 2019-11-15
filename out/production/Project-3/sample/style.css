@@ -1,0 +1,13 @@
+.navbar {
+    -fx-border-color: #888;
+    -fx-border-width: 0 0 .9 0;
+    -fx-background-color: white;
+}
+
+.navbarButtons {
+    -fx-background-color:transparent;
+}
+
+.navbarButtons:hover {
+    -fx-background-color:#dae7f3;
+}

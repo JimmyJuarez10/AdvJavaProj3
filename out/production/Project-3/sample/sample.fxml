@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="876.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <ToolBar prefHeight="46.0" prefWidth="262.0" styleClass="navbar" stylesheets="@style.css">
+            <items>
+            <ImageView fitHeight="39.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@SantaMonica1.jpg" />
+               </image>
+            </ImageView>
+                <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="71.0" styleClass="navbarButtons" stylesheets="@style.css" text="Home" />
+            <ImageView fitHeight="34.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@iconfinder_shopping_cart_empty_172552(1).png" />
+               </image>
+            </ImageView>
+
+                                  <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="36.0" prefWidth="44.0" styleClass="navbarButtons" stylesheets="@style.css" text="Cart" />
+            </items>
+        </ToolBar>
+    </top>
+    <bottom>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </bottom>
+</BorderPane>
