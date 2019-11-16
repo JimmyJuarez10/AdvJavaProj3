@@ -1,7 +1,16 @@
 package Project3_Store;
 
 public class Movie extends Item {
+	
 	private double movieLength;
+	
+	// Movie constructor
+	public Movie(String t, String des, double p, double length) {
+		this.title = t;
+		this.description = des;
+		this.price = p;
+		this.movieLength = length;
+	}
 
 	public double getMovieLength()
 	{

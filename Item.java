@@ -1,17 +1,17 @@
 package Project3_Store;
 
 public class Item {
-	int id;
 	String title;
 	String description;
 	double price;
 
+	// Generic Item constructor
 	public Item(String t, String des, double p) {
-		id =+ 1;
 		this.title = t;
 		this.description = des;
 		this.price = p;
 	}
+	
 	public String getTitle()
 	{
 		return title;
@@ -41,6 +41,7 @@ public class Item {
 	{
 		this.price = newPrice;
 	}
+	
 	public String toString() 
 	{
 		String s = "\nTitle:" + getTitle() + "\nPrice: $ "+ getPrice() +"\nDescription: "+getDescription();

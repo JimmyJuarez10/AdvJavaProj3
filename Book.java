@@ -3,6 +3,14 @@ package Project3_Store;
 public class Book extends Item {
 
 	private int pageCount;
+	
+	// Book constructor
+	public Book(String t, String des, double p, int pageCount) {
+		this.title = t;
+		this.description = des;
+		this.price = p;
+		this.pageCount = pageCount
+	}
 
 	public int getPageCount()
 	{
