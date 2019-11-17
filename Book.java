@@ -6,10 +6,8 @@ public class Book extends Item {
 	
 	// Book constructor
 	public Book(String t, String des, double p, int pageCount) {
-		this.title = t;
-		this.description = des;
-		this.price = p;
-		this.pageCount = pageCount
+		super(t, des, p);
+		this.pageCount = pageCount;
 	}
 
 	public int getPageCount()

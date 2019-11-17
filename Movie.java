@@ -6,9 +6,7 @@ public class Movie extends Item {
 	
 	// Movie constructor
 	public Movie(String t, String des, double p, double length) {
-		this.title = t;
-		this.description = des;
-		this.price = p;
+		super(t, des, p);
 		this.movieLength = length;
 	}
 

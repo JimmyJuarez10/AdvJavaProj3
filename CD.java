@@ -6,9 +6,7 @@ public class CD extends Item {
 	
 	// CD constructor
 	public CD(String t, String des, double p, int trackCount) {
-		this.title = t;
-		this.description = des;
-		this.price = p;
+		super(t, des, p);
 		this.trackCount = trackCount;
 	}
 
