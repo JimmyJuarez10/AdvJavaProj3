@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Store {
 	
 	// Max amount of different items in stock
-	private int maxStock = 6;
+	private int maxStock = 10;
 	
 	// Arbitrary number for max amount of items in specific inventory
 	private int maxInventory = 10;
@@ -63,6 +63,56 @@ public class Store {
 	
 	// Adding cdStock to stock ArrayList
 	stock.add(bookStock);
+	
+	// Creating an ArrayList meatStock for meat in stock
+	private ArrayList<Meat> meatStock = new ArrayList<Meat>(maxInventory);
+	
+	// Creating different meats to stock the meatStock ArrayList
+	private meat1 = new Meat("Ground Beef", "All Natural* 93% Lean/7% Fat Lean Ground Beef Roll", 4.77, 1);
+	private meat2 = new Meat("Chicken Breast", "Foster Farms Family Pack of Boneless Skinless "
+			+ "Chicken Breast", 9.69, 3);
+	private meat3 = new Meat("Ground Beef Patty", "All Natural* 85% Lean/15% Fat "
+			+ "Angus Steak Patties 12 Count", 16.48, 4);
+	
+	// Adding meat to meatStock ArrayList
+	meatStock.add(meat1);
+	meatStock.add(meat2);
+	meatStock.add(meat3);
+	
+	// Adding meatStock to stock ArrayList
+	stock.add(meatStock);
+	
+	// Creating fruitStock 
+	private ArrayList<Fruit> fruitStock = new ArrayList<Fruit>(maxInventory);
+	
+	// Creating different fruits to stock the fruitStock ArrayList
+	private fruit1 = new Fruit("Strawberries", "Stem Strawberries", 3.34, 2);
+	private fruit2 = new Fruit("Oranges", "Navel Oranges", 6.48, 5);
+	private fruit3 = new Fruit("Peaches", "Organic Peaches", 4.29, 2);
+	
+	// Adding fruits to fruitStock ArrayList
+	fruitStock.add(fruit1);
+	fruitStock.add(fruit2);
+	fruitStock.add(fruit3);
+	
+	// Adding fruitStock to stock ArrayList
+	stock.add(fruitStock);
+	
+	// Creating vegetableStock
+	private ArrayList<Vegetable> vegetableStock = new ArrayList<Vegetable>(maxInventory);
+	
+	// Creating vegetables to stock the vegetableStock ArrayList
+	private vegetable1 = new Vegetable("Carrots", "Peeled Baby-Cut Carrots", 1.84, 2);
+	private vegetable2 = new Vegetable("Sweet Potatoes", "Sweet Potato Bag", 3.19, 3);
+	private vegetable3 = new Vegetable("Bell Peppers", "Sweet Mini Peppers Bag", 2.98, 1);
+	
+	// Adding vegetables to vegetableStock ArrayList
+	vegetableStock.add(vegetable1);
+	vegetableStock.add(vegetable2);
+	vegetableStock.add(vegetable3);
+	
+	// Adding vegetableStock to stock ArrayList
+	stock.add(vegetableStock);
 	
 	// getters and setters
 	public void setStock(ArrayList<Item> s) {

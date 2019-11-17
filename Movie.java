@@ -1,7 +1,14 @@
 package Project3_Store;
 
 public class Movie extends Item {
+	
 	private double movieLength;
+	
+	// Movie constructor
+	public Movie(String t, String des, double p, double length) {
+		super(t, des, p);
+		this.movieLength = length;
+	}
 
 	public double getMovieLength()
 	{

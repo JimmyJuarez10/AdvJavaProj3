@@ -1,7 +1,14 @@
 package Project3_Store;
 
 public class CD extends Item {
+	
 	private int trackCount;
+	
+	// CD constructor
+	public CD(String t, String des, double p, int trackCount) {
+		super(t, des, p);
+		this.trackCount = trackCount;
+	}
 
 	public int getTrackCount()
 	{
